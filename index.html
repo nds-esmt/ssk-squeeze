@@ -13,10 +13,10 @@
         target="_top"
         id="emailForm"
         method="POST"
-        action="https://script.google.com/macros/s/AKfycbwlXnXGK4b1jfeZ2UHx8UtqeefonhQwQenbzr3m59WEjans5Xt9EK-WYxsi_wLvhJAA/exec"
+        action="https://script.google.com/macros/s/AKfycby1Nw4HbUZ9mNdeodhsylqpz5x2kC-eyNLvndaDc_26uDJ3cP7IFDDlsL6k0picSkIu/exec"
       >
         <p>Please enter your name and email to access the SSK</p>
-        <input name="date" type="text" value="{date}" hidden />
+        <!-- <input name="date" type="text" value="{date}" hidden /> -->
         name: <input name="name" type="text" bind:value="{name}" required />
         <br />
         email: <input name="email" type="email" bind:value="{email}" required />
@@ -25,6 +25,10 @@
       </form>
     </main>
     <script src="./script.js"></script>
+    <script>
+      //   const date = new Date();
+      //
+    </script>
     <script>
       function handleClick() {
         window.open(
