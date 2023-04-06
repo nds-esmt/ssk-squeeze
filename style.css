@@ -5,10 +5,10 @@ main {
   margin: 0 auto;
 }
 
-h1 {
+p {
   color: #ff3e00;
   text-transform: uppercase;
-  font-size: 8em;
+  font-size: 1em;
   font-weight: 200;
 }
 
