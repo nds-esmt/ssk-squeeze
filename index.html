@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sustainability Starter Kit</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <main>
+      <form
+        target="_top"
+        id="emailForm"
+        method="POST"
+        action="https://script.google.com/macros/s/AKfycbwlXnXGK4b1jfeZ2UHx8UtqeefonhQwQenbzr3m59WEjans5Xt9EK-WYxsi_wLvhJAA/exec"
+      >
+        <p>Please enter your name and email to access the SSK</p>
+        <input name="date" type="text" value="{date}" hidden />
+        name: <input name="name" type="text" bind:value="{name}" required />
+        <br />
+        email: <input name="email" type="email" bind:value="{email}" required />
+        <br />
+        <button type="submit" onclick="{handleClick()}">submit</button>
+      </form>
+    </main>
+    <script src="./script.js"></script>
+    <script>
+      function handleClick() {
+        window.open(
+          "https://static.esmt.org/pub/edtech/riseAnalyticsTest/index.html",
+          "_blank"
+        );
+      }
+    </script>
+  </body>
+</html>
